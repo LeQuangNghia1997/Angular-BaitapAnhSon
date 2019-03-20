@@ -1,0 +1,6 @@
+<div class="header" [style.height.px]="headerHeight">
+
+    <button (click)="increaseHeaderHeight()">+</button>
+    <button (click)="decreaseHeaderHeight()">-</button>
+</div>
+<app-left [leftHeight]="this.leftHeight" [rightHeight]="this.rightHeight"></app-left>

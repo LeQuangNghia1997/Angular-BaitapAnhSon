@@ -1,0 +1,5 @@
+<div class="left" [style.width.px]="leftWidth" [style.height.px]="leftHeight">
+  <button (click)="increaseLeftWidth()">+</button>
+  <button (click)="decreaseLeftWidth()">-</button>
+</div>
+<app-right [rightWidth]="rightWidth" [rightHeight]="rightHeight" [leftWidth]="leftWidth" (cliked)="parentClick($event)"></app-right>
